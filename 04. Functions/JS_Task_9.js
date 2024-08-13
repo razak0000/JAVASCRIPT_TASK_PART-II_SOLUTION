@@ -4,6 +4,9 @@
 
 /* --------------------------------------------------------------------------------- */
 
-/* YOUR CODE HERE */    
+/* YOUR CODE HERE */  
+function reverseNumber(x) {
+    return parseInt(x.toString().split('').reverse().join(''));
+}//changed it to string and splitted and reversed and joined
 
 /* --------------------------------------------------------------------------------- */
