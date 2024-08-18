@@ -7,6 +7,20 @@
 
 /* --------------------------------------------------------------------------------- */
 
-/* YOUR CODE HERE */    
+/* YOUR CODE HERE */ 
+function calculateNotes(amount) {
+    let hundredNotes = Math.floor(amount / 100);
+    let remainingAmount = amount % 100;
+    let fiftyNotes = Math.floor(remainingAmount / 50);
+    remainingAmount = remainingAmount % 50;
+    let tenNotes = Math.floor(remainingAmount / 10);
+
+    console.log(`You will have ${hundredNotes} hundred notes, ${fiftyNotes} fifty notes, and ${tenNotes} ten notes.`);
+}
+
+let amount = parseInt(prompt("Enter the amount to be withdrawn:"));
+calculateNotes(amount);
+   
+ 
 
 /* --------------------------------------------------------------------------------- */
