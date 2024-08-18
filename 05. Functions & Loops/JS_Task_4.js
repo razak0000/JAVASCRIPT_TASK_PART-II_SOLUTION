@@ -7,5 +7,22 @@
 /* --------------------------------------------------------------------------------- */
 
 /* YOUR CODE HERE */    
+function calculateS(a, b, c) {
+    return (a + b + c) / 2;
+}
+
+function calculateArea(a, b, c) {
+    let S = calculateS(a, b, c);
+    return Math.sqrt(S * (S - a) * (S - b) * (S - c));
+}
+
+let a = parseFloat(prompt("Enter the length of side a:"));
+let b = parseFloat(prompt("Enter the length of side b:"));
+let c = parseFloat(prompt("Enter the length of side c:"));
+
+let area = calculateArea(a, b, c);
+
+console.log(`The area of the triangle is ${area}`);
+  
 
 /* --------------------------------------------------------------------------------- */
