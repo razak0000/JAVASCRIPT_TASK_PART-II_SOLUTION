@@ -7,6 +7,11 @@
 
 /* YOUR CODE HERE */  
 function findSecondLowestAndGreatest(arr) {
+// This is the sort() method, which sorts the array in place. The callback function (a, b) => a - b is used to compare elements in the array.
+
+// In this case, the callback function is a simple subtraction: a - b. This tells the sort() method to sort the array in ascending order (smallest to largest). If a is smaller than b, the function returns a negative value, which means a comes before b in the sorted array. If a is larger than b, the function returns a positive value, which means a comes after b in the sorted array.
+
+
     // Remove duplicates and sort the array in ascending order
     let uniqueArr = [...new Set(arr)].sort((a, b) => a - b);
 
