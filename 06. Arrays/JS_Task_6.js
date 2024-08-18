@@ -25,6 +25,11 @@ function findPair(numbers, target) {
  let numbers= [10,20,10,40,50,60,70] ;
  let target = 50;
  let result = findPair(numbers, target);
- 
+ if (result !== null) {
+    console.log(`Pair found at indices ${result[0]} and ${result[1]}`);
+    } else {
+        console.log("No pair found");
+        }
+        
 
 /* --------------------------------------------------------------------------------- */    
