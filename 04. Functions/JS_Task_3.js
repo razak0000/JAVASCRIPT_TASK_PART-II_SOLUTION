@@ -13,5 +13,15 @@
 /* --------------------------------------------------------------------------------- */
 
 /* YOUR CODE HERE */    
+    function calcCircumference(radius) {
+    let circumference = 2 * Math.PI * radius;
+    console.log(`The circumference is ${circumference}`);
+    }
+   function calcArea(radius) {
+    let area = Math.PI * radius ** 2; 
+    console.log(`The area is ${area}`);
+    }
+    calcCircumference(5);
+    calcArea(5);
 
 /* --------------------------------------------------------------------------------- */
