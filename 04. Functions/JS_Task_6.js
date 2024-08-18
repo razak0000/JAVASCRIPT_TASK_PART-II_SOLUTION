@@ -5,6 +5,14 @@
 
 /* --------------------------------------------------------------------------------- */
 
-/* YOUR CODE HERE */    
+/* YOUR CODE HERE */ 
+function extractUniqueChars(str) {
+    let uniqueChars = new Set();
+    for (let char of str) {
+        uniqueChars.add(char);
+       }
+       return Array.from(uniqueChars).join('');
+       }
+       console.log(extractUniqueChars("thequickbrownfoxjumpsoverthelazydog")); //Output : "thequickbrownfxjmpsvlazydg"
 
 /* --------------------------------------------------------------------------------- */
